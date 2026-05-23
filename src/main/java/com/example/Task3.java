@@ -14,12 +14,13 @@ import java.util.List;
 
 public class Task3 {
     private static final String FORECAST_FILE = "result/forecast.txt";
+    private static final String CHROME_DRIVER_PATH = "C:/tmp/chromedriver-win64/chromedriver.exe";
 
     private static final String WEATHER_API_URL =
             "https://api.open-meteo.com/v1/forecast?latitude=56&longitude=44&hourly=temperature_2m,rain&current=cloud_cover&timezone=Europe%2FMoscow&forecast_days=1&wind_speed_unit=ms";
 
     public static void getWeatherForecast() {
-       // System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
+        System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
         WebDriver webDriver = new ChromeDriver();
 
         try {

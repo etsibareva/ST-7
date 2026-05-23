@@ -40,10 +40,11 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+    <!-- Selenium 3 для Java 8 -->
     <dependency>
       <groupId>org.seleniumhq.selenium</groupId>
       <artifactId>selenium-java</artifactId>
-      <version>4.15.0</version>
+      <version>3.141.59</version>
     </dependency>
     <dependency>
       <groupId>com.googlecode.json-simple</groupId>

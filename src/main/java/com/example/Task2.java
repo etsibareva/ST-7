@@ -11,7 +11,7 @@ public class Task2 {
     private static final String CHROME_DRIVER_PATH = "C:/tmp/chromedriver-win64/chromedriver.exe";
 
     public static void getIpAddress() {
-        //System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
+        System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
         WebDriver webDriver = new ChromeDriver();
 
         try {

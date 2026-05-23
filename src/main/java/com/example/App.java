@@ -7,9 +7,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class App
 {
+    private static final String CHROME_DRIVER_PATH = "C:/tmp/chromedriver-win64/chromedriver.exe";
+
     public static void main( String[] args )
     {
-        //System.setProperty("webdriver.chrome.driver", "путь к драйверу в файловой системе");
+        System.setProperty("webdriver.chrome.driver", CHROME_DRIVER_PATH);
         WebDriver webDriver = new ChromeDriver();
         try {
             webDriver.get("https://www.calculator.net/password-generator.html");
